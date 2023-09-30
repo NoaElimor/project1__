@@ -1,0 +1,1 @@
+static projects site based on HTML , CSS, SCSS

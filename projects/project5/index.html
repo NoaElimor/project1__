@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Heebo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela Round" rel="stylesheet">
+  <title>project5</title>
+  <style>
+    body {
+      direction: rtl;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    section {
+      background-image: linear-gradient(#281EFF, #2DFF8C);
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    .area1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Satisfy, Regular;
+      font-size: 160px;
+      text-align: center;
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    h2 {
+      font-family: Varela Round;
+      padding-top: 10px;
+      padding-bottom: 18px;
+      font-size: 32px;
+      letter-spacing: 2px;
+      font-weight: lighter;
+
+    }
+
+    p {
+      font-family: Varela Round;
+      font-size: 16px;
+      padding-bottom: 4px;
+
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+
+    }
+
+    input {
+      width: 400px;
+      border: #fff solid 2px;
+      background-color: #F6F6F624;
+      font-size: 20px;
+      color: #fff;
+      height: 50px;
+
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+      border: none;
+
+    }
+
+    label {
+      font-size: 20px;
+      font-family: Varela Round, regular;
+      color: #F9F9F9;
+    }
+
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+
+    .form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      align-items: flex-end;
+
+
+    }
+
+    @media (min-width:250px) and (max-width:550px) {
+      .form {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 20px;
+      }
+
+      .inputs,
+      .form {
+        flex-direction: column;
+        text-align: center;
+
+      }
+
+      .inputs {
+        width: 100%;
+      }
+
+      section {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 100px;
+      }
+
+      body {
+        padding-right: 0px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .area1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+    <div class="area1">
+      <h1>Here & Now</h1>
+      <h2>רצינו להזמין אתכם להנות משלל מתנות</h2>
+      <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+    </div>
+
+    <div class="form">
+      <div class="inputs">
+        <div class="input-box">
+          <label for="name">שם</label>
+          <input type="text" id="name">
+        </div>
+        <div class="input-box">
+          <label for="email">אימייל</label>
+          <input type="email" id="email">
+
+        </div>
+
+      </div>
+
+      <button type="submit" class="button">עדכנו אותי</button>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

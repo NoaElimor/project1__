@@ -1,0 +1,97 @@
+.header {
+  border-top: 3px solid #1AE0EC;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .header-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+    font-size: 25px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .menu-item {
+      display: block;
+
+      &:hover a {
+        color: #1AE0EC;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+    position: relative;
+
+    @include mobile {
+      display: block;
+    }
+
+    .mobile-header-menu {
+      display: none;
+      list-style: none;
+      position: absolute;
+      background-color: #fff;
+      text-align: right;
+      padding: 10px 20px;
+      top: 100%;
+      right: 0;
+      width: 100px;
+      border: 3px solid #1AE0EC;
+
+      &:hover {
+        display: block;
+      }
+    }
+
+    .hamburger {
+      font-size: 32pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1AE0EC;
+      font-weight: bold;
+      line-height: 32pt;
+
+      &:hover+.mobile-header-menu {
+        display: block;
+      }
+    }
+  }
+
+  .side-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+  }
+
+  .my-name {
+    font-family: 'Satisfy';
+    margin: 15px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.rounded-button {
+  border-radius: 20% 20%;
+  background-color: #10def9;
+  border-radius: 25px;
+  padding: 10px;
+  display: inline-block;
+
+  @include mobile {
+    font-size: 0.8em;
+  }
+}

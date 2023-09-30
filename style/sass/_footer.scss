@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  display: flex;
+  border-bottom: 6px solid #1AE0EC;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  span {
+    color: #1AE0EC;
+  }
+
+}
